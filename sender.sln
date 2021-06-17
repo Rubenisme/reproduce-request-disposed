@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sending-web-api", "sending-web-api\sending-web-api.csproj", "{8FC414FD-41D2-47C5-87C8-C10B2E1D8D0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "the-client", "the-client\the-client.csproj", "{F09C1600-02F3-4809-B8D1-9631A69E5B78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contract", "contract\contract.csproj", "{D2DB3C2C-B907-4ED0-A1C2-9E74F598352E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC414FD-41D2-47C5-87C8-C10B2E1D8D0B}.Debug|x64.ActiveCfg = Debug|x64
+		{8FC414FD-41D2-47C5-87C8-C10B2E1D8D0B}.Debug|x64.Build.0 = Debug|x64
+		{8FC414FD-41D2-47C5-87C8-C10B2E1D8D0B}.Release|x64.ActiveCfg = Release|x64
+		{8FC414FD-41D2-47C5-87C8-C10B2E1D8D0B}.Release|x64.Build.0 = Release|x64
+		{F09C1600-02F3-4809-B8D1-9631A69E5B78}.Debug|x64.ActiveCfg = Debug|x64
+		{F09C1600-02F3-4809-B8D1-9631A69E5B78}.Debug|x64.Build.0 = Debug|x64
+		{F09C1600-02F3-4809-B8D1-9631A69E5B78}.Release|x64.ActiveCfg = Release|Any CPU
+		{F09C1600-02F3-4809-B8D1-9631A69E5B78}.Release|x64.Build.0 = Release|Any CPU
+		{D2DB3C2C-B907-4ED0-A1C2-9E74F598352E}.Debug|x64.ActiveCfg = Debug|x64
+		{D2DB3C2C-B907-4ED0-A1C2-9E74F598352E}.Debug|x64.Build.0 = Debug|x64
+		{D2DB3C2C-B907-4ED0-A1C2-9E74F598352E}.Release|x64.ActiveCfg = Release|x64
+		{D2DB3C2C-B907-4ED0-A1C2-9E74F598352E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9742F641-1F4F-4AFC-AAB4-34E8376A7547}
+	EndGlobalSection
+EndGlobal

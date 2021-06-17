@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "receiving-web-api", "receiving-web-api\receiving-web-api.csproj", "{8C9BD6D8-07E3-4903-A26D-FEB5BEA45D77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "the-client", "the-client\the-client.csproj", "{399642DD-6AF8-4141-AEDA-D497BD8D1202}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contract", "contract\contract.csproj", "{3DB72569-7B35-42FF-AF47-02520F272EAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "integration-test", "integration-test\integration-test.csproj", "{C5270CAF-E9FD-422E-9200-F7968158186C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C9BD6D8-07E3-4903-A26D-FEB5BEA45D77}.Debug|x64.ActiveCfg = Debug|x64
+		{8C9BD6D8-07E3-4903-A26D-FEB5BEA45D77}.Debug|x64.Build.0 = Debug|x64
+		{8C9BD6D8-07E3-4903-A26D-FEB5BEA45D77}.Release|x64.ActiveCfg = Release|x64
+		{8C9BD6D8-07E3-4903-A26D-FEB5BEA45D77}.Release|x64.Build.0 = Release|x64
+		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Debug|x64.ActiveCfg = Debug|x64
+		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Debug|x64.Build.0 = Debug|x64
+		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Release|x64.ActiveCfg = Release|x64
+		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Release|x64.Build.0 = Release|x64
+		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Debug|x64.ActiveCfg = Debug|x64
+		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Debug|x64.Build.0 = Debug|x64
+		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Release|x64.ActiveCfg = Release|x64
+		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Release|x64.Build.0 = Release|x64
+		{C5270CAF-E9FD-422E-9200-F7968158186C}.Debug|x64.ActiveCfg = Debug|x64
+		{C5270CAF-E9FD-422E-9200-F7968158186C}.Debug|x64.Build.0 = Debug|x64
+		{C5270CAF-E9FD-422E-9200-F7968158186C}.Release|x64.ActiveCfg = Release|x64
+		{C5270CAF-E9FD-422E-9200-F7968158186C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F236154-1B37-402B-AD70-753C846ED858}
+	EndGlobalSection
+EndGlobal
