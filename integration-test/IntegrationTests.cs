@@ -1,5 +1,4 @@
 using ClientLib;
-using Contract;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -61,14 +60,10 @@ namespace TestProject
         [Test]
         public async Task TestUpdateOfProperty()
         {
-            // Arrange
-            var updateRequestModel = new UpdateRequest { SomeProperty = "somevalue" };
-
-            // Act
-            await _theClient.UpdateMethod(Id, updateRequestModel, CancellationToken.None);
+            await _theClient.UpdateMethod(Id, CancellationToken.None);
 
             // Assert
-
+            // Does not throw, while it should
         }
     }
 }

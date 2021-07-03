@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Net.Http.Headers;
 
 namespace ClientLib
 {
@@ -16,7 +15,6 @@ namespace ClientLib
             services.AddHttpClient(nameof(TheClient), biz =>
             {
                 biz.BaseAddress = config.BaseUrl;
-                biz.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             });
 
             services.AddSingleton<TheClient>();

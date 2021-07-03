@@ -1,8 +1,5 @@
-﻿using Contract;
-using System;
+﻿using System;
 using System.Net.Http;
-using System.Text;
-using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,33 +14,28 @@ namespace ClientLib
             _httpClientFactory = httpClientFactory;
         }
 
-        private static HttpContent GetContent<T>(T t)
+        public Task UpdateMethod(string id, CancellationToken cancellationToken)
         {
-            return new StringContent(JsonSerializer.Serialize(t), Encoding.UTF8, "application/json");
-        }
-
-        public Task UpdateMethod(string id, UpdateRequest updateRequest, CancellationToken cancellationToken)
-        {
-            var url = $"api/ReceivingUpdateApi/UpdateOfProperty/{Uri.EscapeDataString(id)}";
-            using (var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = GetContent(updateRequest) })
+            async Task Call(HttpRequestMessage request)
             {
-                return Call(request, cancellationToken);
-            }
-        }
-
-        private async Task Call(HttpRequestMessage request, CancellationToken cancellationToken)
-        {
-            using (var httpClient = _httpClientFactory.CreateClient(nameof(TheClient)))
-            {
-                using (var response = await httpClient.SendAsync(request, cancellationToken))
+                using (var httpClient = _httpClientFactory.CreateClient(nameof(TheClient)))
                 {
-                    var content = await response.Content.ReadAsStringAsync(cancellationToken);
-
-                    if (!response.IsSuccessStatusCode)
+                    using (var response = await httpClient.SendAsync(request, cancellationToken))
                     {
-                        throw new CustomException(response.StatusCode, content);
+                        var content = await response.Content.ReadAsStringAsync(cancellationToken);
+
+                        if (!response.IsSuccessStatusCode)
+                        {
+                            throw new Exception("Could not read string, content returned was: " + content);
+                        }
                     }
                 }
+            }
+
+            var url = $"api/ReceivingUpdateApi/UpdateOfProperty/{Uri.EscapeDataString(id)}";
+            using (var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = new StringContent("hello world") })
+            {
+                return Call(request);
             }
         }
     }

@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "receiving-web-api", "receiv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "the-client", "the-client\the-client.csproj", "{399642DD-6AF8-4141-AEDA-D497BD8D1202}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "contract", "contract\contract.csproj", "{3DB72569-7B35-42FF-AF47-02520F272EAB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "integration-test", "integration-test\integration-test.csproj", "{C5270CAF-E9FD-422E-9200-F7968158186C}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Debug|x64.Build.0 = Debug|x64
 		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Release|x64.ActiveCfg = Release|x64
 		{399642DD-6AF8-4141-AEDA-D497BD8D1202}.Release|x64.Build.0 = Release|x64
-		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Debug|x64.ActiveCfg = Debug|x64
-		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Debug|x64.Build.0 = Debug|x64
-		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Release|x64.ActiveCfg = Release|x64
-		{3DB72569-7B35-42FF-AF47-02520F272EAB}.Release|x64.Build.0 = Release|x64
 		{C5270CAF-E9FD-422E-9200-F7968158186C}.Debug|x64.ActiveCfg = Debug|x64
 		{C5270CAF-E9FD-422E-9200-F7968158186C}.Debug|x64.Build.0 = Debug|x64
 		{C5270CAF-E9FD-422E-9200-F7968158186C}.Release|x64.ActiveCfg = Release|x64
